@@ -78,6 +78,8 @@ The VPC Flow Logs IAM role follows the same pattern established in Lab 2's Lambd
 
 - **VPC Flow Logs** streaming to a dedicated CloudWatch Log Group, capturing all traffic (`ALL` — both accepted and rejected connections)
 
+![VPC Flow Log entries showing captured traffic](screenshots/cloudwatch-loggroupstreams.png)
+
 ## Testing & Verification
 
 Rather than relying on `terraform apply` succeeding as the only signal of correctness, two temporary EC2 test instances (one per tier) were launched to prove the architecture actually behaves as designed — then destroyed along with everything else once verified.
